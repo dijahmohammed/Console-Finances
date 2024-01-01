@@ -86,3 +86,80 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+let totalMonths = 0;
+let sum= 0
+for (let index = 0; index < finances.length; index++) {
+sum +=finances[index][1]
+totalMonths++;
+
+}
+let total=0
+let differences=[];
+
+for (let index = 0; index < finances.length-1; index++) {
+total+= (finances[index+1][1]-finances[index][1]);
+average=total/(totalMonths-1);
+differences.push(total)
+
+
+var average= average.toFixed(2)
+
+}
+
+let greatestProfit = 0;
+let greatestDecrease = 0;
+let greatestProfitMonth = '';
+let greatestDecreaseMonth = '';
+
+for (let i = 1; i < finances.length; i++) {
+  let monthYear = finances[i][0];
+  let profit = finances[i][1] - finances[i - 1][1];
+
+  // Check for greatest profit
+  if (profit > greatestProfit) {
+    greatestProfit = profit;
+    greatestProfitMonth = monthYear;
+  }
+
+  // Check for greatest decrease
+  if (profit < greatestDecrease) {
+    greatestDecrease = profit;
+    greatestDecreaseMonth = monthYear;
+  }
+}
+
+
+
+
+
+console.log("Financial Analysis:");
+console.log("----------------");
+console.log("Total Months: "+totalMonths);
+console.log("Total: $"+sum) ;
+
+
+console.log("Average Change: $"+average);
+
+console.log("Greatest Increase in Profits/Losses: " + greatestProfitMonth+ "($"+greatestProfit+")" );
+console.log("Greatest Decrease in Profits/Loses: " + greatestDecreaseMonth+ "($"+greatestDecrease+")" );;
+
+
+
+// alert("Financial Analysis\nTotal Months:"+totalMonths +"\nTotal" +sum)
+
+// finances.forEach(([month]) => {
+//   const [monthName] = month.split('-');
+
+
+
+    
+// });
+
+
+
+// let monthSum=0
+// for (let index = 0; index < finances.length; index++) {
+//   var Months = finances[0][index]
+//   monthSum+= finances[0][index]
+// }
