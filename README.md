@@ -18,6 +18,16 @@ Navigate to the 'inspect' section of the browser, I like to do this by right-cli
 
 ## Credits
 ### some useful links!
+<ul>
+ <li>
+  https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/ </li>
+ <li> https://github.com/JamesIves/github-pages-deploy-action/issues/38</li>
+ <li>https://www.prepbytes.com/blog/java/java-program-for-finding-the-largest-element-of-the-array/</li>
+ <li>https://www.elated.com/nested-arrays-in-javascript/</li>
+ <li>https://www.w3docs.com/snippets/java/get-only-part-of-an-array-in-java.html</li>
+ <li>https://sentry.io/answers/how-to-find-the-sum-of-an-array-of-numbers/#:~:text=Using%20reduce()&text=reduce((accumulator%2C%20currentValue),previous%20call%20of%20the%20function.</li>
+
+</ul>
 
 
 
